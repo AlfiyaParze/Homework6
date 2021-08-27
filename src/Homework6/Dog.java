@@ -2,7 +2,11 @@ package Homework6;
 
 public class Dog extends Animal {
 
-    public Dog() {
-        super("Dog", 400, 10, 0.5F);
+    public static int DogCounter;
+
+    public Dog(String id, int runDistance, int swimDistance) {
+        super(id,runDistance,swimDistance);
+        DogCounter++;
     }
+
 }
